@@ -1,6 +1,6 @@
-const User = require('../Model/User'); 
+const User = require('../src/Model/User'); 
 const crypto = require('crypto');
-const Auth = require('../Auth/auth'); // Adjust the path as necessary
+const Auth = require('../src/Auth/auth'); // Adjust the path as necessary
 
 const UserService = {
 

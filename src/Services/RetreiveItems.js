@@ -1,5 +1,5 @@
 const axios = require('axios');
-const User = require('../Model/User');
+const User = require('../src/Model/User');
 
 const RetreiveItems = {
   async getCategories() {

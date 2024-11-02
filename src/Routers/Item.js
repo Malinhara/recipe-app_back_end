@@ -1,6 +1,6 @@
 const express = require('express');
-const RetreiveService = require('../Services/RetreiveItems');
-const Auth = require('../Auth/auth');
+const RetreiveService = require('../src/Services/RetreiveItems');
+const Auth = require('../src/Auth/auth');
 
 const itemRouter = express.Router();
 

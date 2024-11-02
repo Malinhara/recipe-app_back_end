@@ -3,9 +3,9 @@ const dotenv = require('dotenv');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const helmet = require('helmet');
-const connectDB = require('./DBconnection/Connection');
-const userRouter = require('./Routers/User');
-const itemRouter = require('./Routers/Item');
+const connectDB = require('./src/DBconnection/Connection');
+const userRouter = require('./src/Routers/User');
+const itemRouter = require('./src/Routers/Item');
 
 // Load environment variables
 dotenv.config();
