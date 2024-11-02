@@ -34,6 +34,9 @@ app.use(helmet.contentSecurityPolicy({
   },
 }));
 
+app.get('/home', (req, res) => {
+  res.status(200).json('Welcome, your app is working well');
+})
 // Routes
 app.use('/user', userRouter);
 app.use('/item', itemRouter);
