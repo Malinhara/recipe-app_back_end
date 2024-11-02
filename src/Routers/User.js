@@ -1,7 +1,7 @@
 const express = require('express');
-const UserService = require('../src/Services/User');
-const Auth = require('../src/Auth/auth');
-const authorizeAdmin = require('../src/Middleware/Authadmin');
+const UserService = require('../Services/User');
+const Auth = require('../Auth/auth');
+const authorizeAdmin = require('../Middleware/Authadmin')
 
 const userRouter = express.Router();
 
