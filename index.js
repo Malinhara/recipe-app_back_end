@@ -18,7 +18,7 @@ connectDB();
 
 // Middleware
 app.use(cors({
-  origin: 'https://recipe-app-front-end-three.vercel.app',
+  origin: 'https://recipe-app-front-end-git-main-poornas-projects-313c409a.vercel.app/',
   credentials: true
 }));
 app.use(express.json());
