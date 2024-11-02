@@ -34,6 +34,16 @@ app.use(helmet.contentSecurityPolicy({
   },
 }));
 
+app.get('/home', (req, res) => {
+  res.status(200).json('Welcome, your app is working well');
+});
+
+
+app.use((err, req, res, next) => {
+  console.error(err); // Log the error for debugging
+  res.status(500).json({ message: 'Internal Server Error' });
+});
+
 // Routes
 app.use('/user', userRouter);
 app.use('/item', itemRouter);
