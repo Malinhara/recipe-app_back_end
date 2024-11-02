@@ -1,16 +1,50 @@
-
 {
   "version": 2,
   "builds": [
     {
-      "src": "Server.js", 
+      "src": "Server.js",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
+      "src": "/user/(.*)",
+      "dest": "Server.js"
+    },
+    {
+      "src": "/item/(.*)",
+      "dest": "Server.js"
+    },
+    {
+      "src": "/admin/(.*)",
+      "dest": "Server.js"
+    },
+    {
       "src": "/(.*)",
       "dest": "Server.js"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Credentials",
+          "value": "true"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "https://recipe-app-front-end.vercel.app"
+        },
+        {
+          "key": "Access-Control-Allow-Methods",
+          "value": "GET,OPTIONS,PATCH,DELETE,POST,PUT"
+        },
+        {
+          "key": "Access-Control-Allow-Headers",
+          "value": "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version"
+        }
+      ]
     }
   ]
 }
