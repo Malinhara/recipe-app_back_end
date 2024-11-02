@@ -1,9 +1,9 @@
 {
   "name": "recipe-app_back_end",
   "version": "1.0.0",
-  "main": "Server.js",
+  "main": "server.js",
  "scripts": {
-    "start": "node Server.js"
+    "start": "nodemon server.js"
   },
   "author": "",
   "license": "ISC",
