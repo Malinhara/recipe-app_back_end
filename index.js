@@ -18,7 +18,7 @@ connectDB();
 
 // Middleware
 app.use(cors({
-  origin: 'https://foodpoorna2.netlify.app',
+  origin: 'https://recipe-app-front-end-bswl.vercel.app',
   credentials: true
 }));
 app.use(express.json());
